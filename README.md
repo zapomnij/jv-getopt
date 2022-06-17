@@ -28,3 +28,18 @@ If you want to distribute Options class in your project via JAR file, use comman
 
     # Delete old class
     rm git/Zapomnij/getopt/Options.class
+
+## Attaching JAR from releases tab
+If you don't want to compile manually this library, download JAR file from releases and:
+- If you use Java-dedicated IDE, just add this library by built-in IDE functions.
+- If you don't use Java-dedicated IDE:
+ - To attach this library to JAR program: put getopt JAR archive in the root of JAR program and place that in the manifest:
+
+
+        Class-Path: getopt-[getopt version which you use].jar
+
+
+ - To attach JAR in project which uses a class directory: put getopt JAR archive in the root of classpath and execute command:
+
+
+        java -classpath [classpath]:[classpath]/getopt-[getopt version which you use].jar

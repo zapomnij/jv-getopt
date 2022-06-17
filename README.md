@@ -42,4 +42,4 @@ If you don't want to compile manually this library, download JAR file from relea
     - To attach JAR in project which uses a class directory: put getopt JAR archive in the root of classpath and execute command:
 
 
-                java -classpath [classpath]:[classpath]/getopt-[getopt version which you use].jar
+                java -classpath [classpath]:[classpath]/getopt-[getopt version which you use].jar [Main class of program]
